@@ -1,6 +1,6 @@
 # PL2025-A104268
 
-![Zita Duarte](zitaduarte.jpg)  
+![Zita Duarte](zitaduarte.jpeg)  
 
 ## 📌 Identificação  
 •⁠  ⁠**Nome:** Zita Magalhães Duarte
