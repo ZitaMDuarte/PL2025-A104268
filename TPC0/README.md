@@ -6,6 +6,7 @@
 ## 👤 Autor
 - ⁠**Nome:** Zita Magalhães Duarte
 - **Número de Aluno:** A104268
+
 ![Zita Duarte](../zitaduarte.jpeg)
 
 ## 📖 Resumo
