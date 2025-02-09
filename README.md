@@ -5,8 +5,8 @@
 ## 📌 Identificação  
 -  ⁠**Nome:** Zita Magalhães Duarte
 -  ⁠**Número de Aluno:** A104268
--⁠  ⁠**Curso:** Licenciatura em Engenharia Informática
--⁠  ⁠**Ano Letivo:** 2024/2025
+-  **Curso:** Licenciatura em Engenharia Informática
+-  **Ano Letivo:** 2024/2025
 
 ## 📖 Sobre este Repositório  
 Este repositório contém os Trabalhos Práticos (TPCs) da unidade curricular **PL2025**.  
