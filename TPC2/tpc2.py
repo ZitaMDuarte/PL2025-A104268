@@ -1,6 +1,4 @@
 import re
-from collections import defaultdict
-
 
 def corrigir_csv(ficheiro):
     """Corrige o CSV removendo quebras de linha dentro de descrições entre aspas e retorna o conteúdo corrigido como lista de linhas."""
@@ -41,40 +39,40 @@ def extrair_compositores(linhas_corrigidas):
 def contar_obras_por_periodo(linhas_corrigidas):
     """Conta quantas obras existem por período e retorna um dicionário com a distribuição."""
 
-    distribuicao = defaultdict(int)  
+    distribuicao = {}  
 
     for linha in linhas_corrigidas[1:]:  
-        campos = re.split(r';(?=(?:[^"]*"[^"]*")*[^"]*$)', linha.strip())  
+        campos = re.split(r';(?=(?:[^"]*"[^"]*")*[^"]*$)', linha.strip()) 
 
         if len(campos) > 3:  
             periodo = campos[3].strip()  
 
-            
             if not periodo.isdigit():  
+                if periodo not in distribuicao:
+                    distribuicao[periodo] = 0  
                 distribuicao[periodo] += 1
 
-    return distribuicao
+    return dict(sorted(distribuicao.items()))  
 
 def obter_obras_por_periodo(linhas_corrigidas):
     """Cria um dicionário onde cada período está associado a uma lista alfabética das obras desse período."""
     
-    obras_por_periodo = defaultdict(list) 
+    obras_por_periodo = {} 
 
-    for linha in linhas_corrigidas[1:]: 
-        campos = re.split(r';(?=(?:[^"]*"[^"]*")*[^"]*$)', linha.strip()) 
+    for linha in linhas_corrigidas[1:]:  
+        campos = re.split(r';(?=(?:[^"]*"[^"]*")*[^"]*$)', linha.strip())  
 
         if len(campos) > 3:
-            titulo = campos[0].strip()
+            titulo = campos[0].strip()  
             periodo = campos[3].strip()  
 
-            
-            if titulo and periodo and not periodo.isdigit():
+            if titulo and periodo and not periodo.isdigit():  
+                if periodo not in obras_por_periodo:
+                    obras_por_periodo[periodo] = []  
                 obras_por_periodo[periodo].append(titulo)
 
-    for periodo in obras_por_periodo:
-        obras_por_periodo[periodo].sort()
-
-    return dict(sorted(obras_por_periodo.items())) 
+    
+    return {periodo: sorted(obras) for periodo, obras in sorted(obras_por_periodo.items())}
 
 
 
