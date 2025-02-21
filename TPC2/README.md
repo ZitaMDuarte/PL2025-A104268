@@ -20,6 +20,11 @@ O programa lê o ficheiro obras.csv e processa a informação, dando como result
 
 
 ## 🛠️ Execução do Programa
+O programa é executado usando o seguinte comando:
 
+   ```bash
+   python tpc2.py
+   ```
+Para o funcionamento do programa, o ficheiro obras.csv tem de estar na pasta onde se encontra o ficheiro tpc2.py.
 
 ---
