@@ -30,5 +30,5 @@ Este trabalho de casa consiste num analisador léxico implementado em Python.
 O programa pode ser executado diretamente no terminal com o seguinte comando:
 
 ```bash
-python analisador_lexico.py
+python tpc4.py
 ```
