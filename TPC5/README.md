@@ -7,6 +7,8 @@
 - **Nome:** Zita Magalhães Duarte
 - **Número de Aluno:** A104268
 
+![Zita Duarte](../zitaduarte.jpeg)
+
 ## 📖 Resumo
 Este projeto implementa um simulador de uma máquina de vending que aceita moedas, permite selecionar produtos e devolve o troco, gerindo o stock dos produtos através de um ficheiro JSON.
 
