@@ -1,4 +1,4 @@
-# 🏪 Máquina de Vending - Analisador de Stock
+# 📌 Máquina de Vending - Analisador de Stock
 
 ## 📅 Data
 11/03/2025
