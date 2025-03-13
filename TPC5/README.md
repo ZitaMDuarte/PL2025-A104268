@@ -1,7 +1,7 @@
 # 📌 Máquina de Vending - Analisador de Stock
 
 ## 📅 Data
-11/03/2025
+13/03/2025
 
 ## 👤 Autor
 - **Nome:** Zita Magalhães Duarte
