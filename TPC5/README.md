@@ -34,7 +34,7 @@ Este projeto implementa um simulador de uma máquina de vending que aceita moeda
 
 1. Criar um ficheiro `stock.json` com o stock.
 2. Executamos usando o comando:
-`python3 tpc5.py stock.json`
+`python tpc5.py stock.json`
 
 
 
