@@ -19,3 +19,7 @@ Foi utilizada uma gramática LL(1) para expressões com parênteses, adição, s
 
 ---
 
+## 🛠️ Execução do Programa
+
+1. Executamos usando o comando:
+`python tpc6.py `
